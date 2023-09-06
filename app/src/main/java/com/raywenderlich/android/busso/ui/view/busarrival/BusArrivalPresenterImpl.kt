@@ -39,6 +39,7 @@ import android.view.View
 import com.raywenderlich.android.busso.network.BussoEndpoint
 import com.raywenderlich.android.di.scopes.FragmentScope
 import com.raywenderlich.android.ui.mvp.impl.BasePresenter
+import dagger.hilt.android.scopes.FragmentScoped
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

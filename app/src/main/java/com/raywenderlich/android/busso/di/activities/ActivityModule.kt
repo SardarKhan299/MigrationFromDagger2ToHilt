@@ -34,13 +34,13 @@
 
 package com.raywenderlich.android.busso.di.activities
 
-import com.raywenderlich.android.busso.di.navigator.NavigatorModule
 import com.raywenderlich.android.busso.ui.view.main.MainPresenter
 import com.raywenderlich.android.busso.ui.view.main.MainPresenterImpl
 import com.raywenderlich.android.busso.ui.view.splash.SplashPresenter
 import com.raywenderlich.android.busso.ui.view.splash.SplashPresenterImpl
 import com.raywenderlich.android.busso.ui.view.splash.SplashViewBinder
 import com.raywenderlich.android.busso.ui.view.splash.SplashViewBinderImpl
+import com.raywenderlich.android.ui.navigation.di.NavigationModule
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -48,7 +48,7 @@ import dagger.hilt.android.components.ActivityComponent
 
 @Module(
   includes = [
-    NavigatorModule::class
+    NavigationModule::class
   ]
 )
 @InstallIn(ActivityComponent::class)

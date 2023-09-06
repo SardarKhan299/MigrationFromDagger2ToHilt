@@ -38,6 +38,7 @@ import com.raywenderlich.android.busso.conf.BussoConfiguration
 import com.raywenderlich.android.busso.network.NetworkModule
 import com.raywenderlich.android.location.di.LocationModule
 import com.raywenderlich.android.network.NetworkingConfiguration
+import com.raywenderlich.android.plugins.engine.di.InformationPluginEngineModule
 import dagger.Module
 import dagger.Provides
 import dagger.android.support.AndroidSupportInjectionModule
@@ -48,7 +49,8 @@ import dagger.hilt.android.components.ApplicationComponent
   includes = [
     LocationModule::class,
     NetworkModule::class,
-    AndroidSupportInjectionModule::class
+    AndroidSupportInjectionModule::class,
+    InformationPluginEngineModule::class
   ]
 )
 @InstallIn(ApplicationComponent::class)

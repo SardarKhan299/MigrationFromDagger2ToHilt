@@ -46,6 +46,7 @@ import com.raywenderlich.android.location.api.model.*
 import com.raywenderlich.android.ui.mvp.impl.BasePresenter
 import com.raywenderlich.android.ui.navigation.FragmentFactoryDestination
 import com.raywenderlich.android.ui.navigation.Navigator
+import dagger.hilt.android.scopes.FragmentScoped
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -54,8 +55,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 @FragmentScoped
-class BusStopListPresenterImpl @Inject constructor(
-  @Named("Main") private val navigator: Navigator,
+class BusStopListPresenterImpl @Inject constructor(private val navigator: Navigator,
   private val locationObservable: Observable<LocationEvent>,
   private val bussoEndpoint: BussoEndpoint
 ) : BasePresenter<View, BusStopListViewBinder>(),

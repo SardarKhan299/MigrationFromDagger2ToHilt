@@ -41,6 +41,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.raywenderlich.android.busso.R
 import com.raywenderlich.android.di.scopes.FragmentScope
+import dagger.hilt.android.scopes.FragmentScoped
 import javax.inject.Inject
 
 /** The ViewBinder for the BusArrival screen */

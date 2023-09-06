@@ -46,9 +46,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 /** The ViewBinder implementation for the SplashActivity */
-class SplashViewBinderImpl @Inject constructor(
-  @Named("Splash") private val navigator: Navigator
-) : SplashViewBinder {
+class SplashViewBinderImpl @Inject constructor(private val navigator: Navigator) : SplashViewBinder {
 
   companion object {
     private const val LOCATION_PERMISSION_REQUEST_ID = 1
