@@ -53,7 +53,7 @@ import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 import javax.inject.Named
 
-@FragmentScope
+@FragmentScoped
 class BusStopListPresenterImpl @Inject constructor(
   @Named("Main") private val navigator: Navigator,
   private val locationObservable: Observable<LocationEvent>,

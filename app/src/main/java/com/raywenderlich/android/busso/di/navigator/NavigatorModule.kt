@@ -41,6 +41,7 @@ import com.raywenderlich.android.ui.navigation.Navigator
 import com.raywenderlich.android.ui.navigation.NavigatorImpl
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Named
 
 @Module

@@ -44,7 +44,7 @@ import com.raywenderlich.android.di.scopes.FragmentScope
 import javax.inject.Inject
 
 /** BusStopListViewBinder implementation for the BusStopFragment */
-@FragmentScope
+@FragmentScoped
 class BusStopListViewBinderImpl @Inject constructor(
   private val busStopItemSelectedListener: BusStopListViewBinder.BusStopItemSelectedListener
 ) : BusStopListViewBinder {

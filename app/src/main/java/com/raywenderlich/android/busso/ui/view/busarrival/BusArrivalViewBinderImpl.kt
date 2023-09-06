@@ -44,7 +44,7 @@ import com.raywenderlich.android.di.scopes.FragmentScope
 import javax.inject.Inject
 
 /** The ViewBinder for the BusArrival screen */
-@FragmentScope
+@FragmentScoped
 class BusArrivalViewBinderImpl @Inject constructor() : BusArrivalViewBinder {
 
   private lateinit var busArrivalRecyclerView: RecyclerView

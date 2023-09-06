@@ -44,7 +44,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
-@FragmentScope
+@FragmentScoped
 class BusArrivalPresenterImpl @Inject constructor(
   private val bussoEndpoint: BussoEndpoint
 ) : BasePresenter<View, BusArrivalViewBinder>(),
